@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 구성하기</title>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+    <input type="tel">
+    <input type="number">
+    <input type="url">
+    <input type="search">
+    <input type="email">
+    <input type="checkbox">
+    <input type="radio">
+    <input type="file">
+    <input type="image" src="./images/icon.png">
+    <input type="hidden">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="week">
+    <input type="time">
+    <input type="range">
+    <input type="color">
+    <input type="submit">
+    <input type="reset">
+    <br>
+    <label>
+        아이디
+        <input type="text">
+    </label>
+    <br>
+    <label for="userpw">비밀번호</label>
+    <input type="password" id="userpw">
+    <br>
+    <label for="username">
+        <input type="text" id="username">이름
+    </label>
+    <br>
+    <form>
+        <fieldset>
+            <legend>기본 정보</legend>
+            <p>
+                <label for="userid">아이디</label>
+                <input type="text" id="userid">
+            </p>
+            <p>
+                <label for="passwd">비밀번호</label>
+                <input type="password" id="passwd">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>선택 정보</legend>
+            <p>
+                <label for="age">나이</label>
+                <input type="number" id="age">
+            </p>
+            <p>
+                <label for="recommender">추천인</label>
+                <input type="text" id="recommender">
+            </p>
+        </fieldset>
+    </form>
+    <br>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>블로그 글쓰기</legend>
+            <p>
+                <label for="title">제목
+                    <input type="text" id="title" name="title">
+                </label>
+            </p>
+            <p>
+                <label for="desc">내용
+                    <textarea id="desc" name="desc"></textarea>
+                </label>
+            </p>
+        </fieldset>
+    </form>
+    <br>
+    <select name="city" id="city">
+        <option value="강북구">강북구</option>
+        <option value="강남구">강남구</option>
+        <option value="서초구">서초구</option>
+        <option value="중원구">중원구</option>
+        <option value="분당구">분당구</option>
+    </select>
+    <br>
+    <select name="city" id="city" size="3" multiple>
+        <optgroup label="서울시">
+            <option value="강북구">강북구</option>
+            <option value="강남구" selected>강남구</option>
+            <option value="서초구">서초구</option>
+        </optgroup>
+        <optgroup label="경기도 성남시">
+            <option value="중원구">중원구</option>
+            <option value="분당구">분당구</option>
+        </optgroup>
+    </select>
+    <br>
+    <button type="submit">
+        <img src="./images/icon.png" alt="허리피자">
+        허리를 피세요
+    </button>
+    <br>
+    <input type="text" disabled>
+    <button type="button" disabled>비활성</button>
+    <br>
+    <input type="password" readonly>
+    <textarea readonly></textarea>
+    <br>
+    <input type="url" maxlength="4">
+    <textarea maxlength="4"></textarea>
+    <br>
+    <form action="#">
+        <fieldset>
+          <legend>좋아하는 과일</legend>
+          <input type="checkbox" id="banana" name="banana" value="banana">
+          <label for="banana">banana</label><br>
+          <input type="checkbox" id="apple" name="apple" value="apple">
+          <label for="apple">apple</label><br>
+          <input type="checkbox" id="orange" name="orange" value="orange"  checked>
+          <label for="orange">orange</label><br>
+        </fieldset>
+    </form>
+    <br>
+    <input type="tel" placeholder="전화번호를 입력해 주세요."
+</body>
+</html>
