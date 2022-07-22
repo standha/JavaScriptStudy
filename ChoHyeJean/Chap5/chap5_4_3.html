@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 요소 가상 클래스 선택자</title>
+    <style>
+        input:disabled, button:disabled{
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <p>비활성화</p>
+    <input type="text" disabled>
+    <button disabled>버튼</button>
+    <br>    
+    <p>활성화</p>
+    <input type="text" enabled>
+    <button enabled>버튼</button>
+</body>
+</html>
