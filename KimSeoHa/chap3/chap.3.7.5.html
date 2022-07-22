@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> caption </title>
+    </head>
+    <body>
+        <!--caption은 표 제목 만들 때 -->
+        <table>
+            <caption> 상품 </caption>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">2,500원</td> <!--셀 병합-->
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+                <!--4행 4열은 병합했으므로 생성 x-->
+            </tr>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">14,000</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> select, option, optgroup </title>
+    </head>
+    <body>
+        <h1>지역</h1>
+        <form>
+        <!--select은 콤보박스 생성, option은 항목 추가, optgroup은 그룹 묶기 -->
+            <select name="city" id="city">
+                <optgroup label="서울시">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구" selected>강남구</option>
+                    <option value="서초구">서초구</option>
+                </optgroup>
+                <optgroup label="경기도 성남시">
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <h1>과일</h1>
+        <form>
+        <!--size 는 웹에 노출되는 항복 갯수-->
+            <select name="fruit" id="fruit" size="3">
+                <option vlaue="바나나">바나나</option>
+                <option value="포도">포도</option>
+                <option value="토마토">토마토</option>
+                <option value="오렌지" selected>오렌지</option>
+                <option value="딸기">딸기</option>
+            </select>
+        </form>
+
+        <h1>과자</h1>
+        <form>
+            <select name="snack" id="snack" multiple>
+                <option vlaue="포스틱">포스틱</option>
+                <option value="콘쵸">콘쵸</option>
+                <option value="콘칲">콘칲</option>
+                <option value="새우깡">새우깡</option>
+                <option value="썬칩">썬칩</option>
+            </select>
+        </form>
+    </body>
+</html>
