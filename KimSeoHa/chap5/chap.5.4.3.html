@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> 입력 요소 가상 클래스 선택자 </title>
+        <style>
+            input:focus{           /*입력 요소에 커서가 활성화 되어있으면*/
+                color: red;
+            }
+            input:checked+label{   /*체크박스에 표시가 되어있으면*/
+                color:red;
+            }
+            input:disabled,button:disabled{   /*상호작용 요사가 비활성화 되어있으면*/
+                background-color: #ccc;
+            }
+            input:enabled,button:enabled{     /*상호작용 요소가 활성화 되어있으면*/
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text">
+
+        <input type="checkbox" id="userid">
+        <label for="userid">아이디</label>
+
+        <input type="text" disabled>
+        <button disabled>버튼</button>
+
+        <input type="text">
+        <button>버튼</button>
+    </body>
+</html>

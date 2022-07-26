@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> 가상 요소 선택자 </title>
+        <style>
+            p::before{
+                content:'<before>';
+                color: darkgreen;
+            }
+            p::after{
+                content:'<after>';
+            }
+        </style>
+    </head>
+    <body>
+        <!--가상 요소 선택자는 마치 존재하는 것처럼 취급해 선택하는 것을 의미-->
+        <p>Lorem, ipsum dolor.</p>
+    </body>
+</html>
