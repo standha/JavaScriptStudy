@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> 구조적 가상 클래스 선택자 </title>
+        <style>
+            li:first-child{        
+                color: red;
+            }
+            li:last-child{   
+                color:red;
+            }
+            p:nth-child(2){   
+                color:blue;
+            }
+           p:nth-last-child(2){    
+                color: blueviolet;
+            }
+            span:nth-of-type(1){
+                color: darkgoldenrod;
+            }
+            span:nth-last-of-type(2){
+                color:dodgerblue;
+            }
+            p:first-of-type{
+                color:aqua;
+            }
+            p:last-of-type{
+                color:greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>
+                <p>가나다라</p>
+            </li>
+            <li>
+                <p>가나다라</p>
+            </li>
+            <li>
+                <p>가나다라</p>
+            </li>
+            <li>
+                <p>가나다라</p>
+            </li>
+        </ol>
+
+        <div>
+            <p>lorem1</p>
+            <p>lorem2</p>
+            <p>lorem3</p>
+            <p>lorem4</p>
+        </div>
+
+        <div>
+            <span>lorem1</span>
+            <span>lorem2</span>
+            <span>lorem3</span>
+            <span>lorem4</span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="'viewport" contnet="width=device-width, inital-scale=0.1">
+        <title> 기본 선택자 사용 </title>
+        <style>
+            *{
+                font-size: 24px;
+            }
+            h2{
+                color:blue;
+            }
+            #title{
+                color:aquamarine;
+            }
+            .red{
+                color:red;
+            }
+            p[href]{
+                color:coral;
+            }
+            a[target="_blank"]{
+                color:blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>기본 선택자</h1>
+        <h2>태그 선택자는 태그명과 일치하는 태그를 모두 선택합니다.</h2>
+        <h3 id="title">아이디 선택자는 id 속성값을 이용해 선택자를 지정하는 방식입니다.</h3>
+        <h4 class="red">class 속성값으로 선택자를 지정합니다. 중복 가능합니다.</h4>
+        <p href="#">기본 p태그 </p>
+        <a href="#" target="_blank">새 창으로 열리는 a 태그</a>
+    </body>
+</html>
